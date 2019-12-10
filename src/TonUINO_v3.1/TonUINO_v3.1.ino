@@ -12,7 +12,7 @@
 #include <SPI.h>
 #include <MFRC522.h>
 #include <EEPROM.h>
-#include <JC_Button.h>
+#include <EasyButton.h>
 #include <math.h>
 #include <FastLED.h>
 #include <Preferences.h>
@@ -241,9 +241,9 @@ MFRC522::StatusCode status;
 
 #define LONG_PRESS 1000
 
-Button pauseButton(buttonPause);
-Button upButton(buttonUp,100);
-Button downButton(buttonDown,100);
+EasyButton pauseButton(buttonPause);
+EasyButton upButton(buttonUp,100);
+EasyButton downButton(buttonDown,100);
 bool ignorePauseButton = false;
 bool ignoreUpButton = false;
 bool ignoreDownButton = false;
@@ -694,7 +694,7 @@ void setup() {
   }
 
   Serial.println("TonUINO V3.1 auf ESP32 Basis");
-  Serial.println("Original V2.0: T. Voss, Erweitert V3.0: C. Ulbrich");
+  Serial.println("Original V2.0: T. Voss, Erweitert Dec 2019 | V3.1: D. Thanner");
 
   Serial.println();
   Serial.println(F("DFRobot DFPlayer Mini"));

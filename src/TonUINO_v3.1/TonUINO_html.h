@@ -16,12 +16,13 @@ String getFooter() {
 
 //HTML Seite die Angezeigt werden soll
 String getPage(){
-String page = "<!DOCTYPE html>";
-page += "<html>";
+String page = "<!doctype html>";
+page += "<html lang='de'>";
 page += "<head>";
+page += "<meta charset='utf-8'/>";
 page += "<title>TonUINO Interface</title>";
 page += "<meta name='viewport' content='width=device-width, initial-scale=1'>";
-page += "<meta name='author' content='C. Ulbrich'>";
+page += "<meta name='author' content='C. Ulbrich | updated 2019-12-10: D. Thanner'>";
 page += "  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' type='text/css'>";
 page += "  <link rel='stylesheet' href='https://bootswatch.com/4/spacelab/bootstrap.min.css'> ";
 page += "  ";
@@ -73,8 +74,8 @@ page += "  <div class='py-5 bg-gradient'>";
 page += "    <div class='container'>";
 page += "      <div class='row'>";
 page += "        <div class='col-md-12'>";
-page += "          <h1 class='display-1'><font face='Comic sans MS'>Wilkommen im TonUINO Interface</font></h1>";
-page += "          <h1 class=''>hier können Sie ihren TonUINO konfigurieren und steuern</h1>";
+page += "          <h2 class='display-2'><font face='Comic sans MS'>Willkommen auf der TonUINO GUI</font></h2>";
+page += "          <h3 class=''>Die Benutzeroberfläche ermöglicht eine Veränderung diverser Funktionen</h3>";
 page += "        </div>";
 page += "    </div>";
 page += "	<hr />";
@@ -225,7 +226,7 @@ page += "            </tbody>";
 page += "          </table>";
 page += "        </div>";
 page += "        <div>";
-page += "          <br> Zum ändern eines TAG hier ID,Ordner,Wiedergabemodus eingeben:";
+page += "          <br> Zum Ändern eines TAG hier ID,Ordner,Wiedergabemodus eingeben:";
 page += "          <br>";
 page += "     <form action='/'> Eingabe:  ";
 page += "       <input type='text' name='cng-rfid-tag'> &nbsp ";
